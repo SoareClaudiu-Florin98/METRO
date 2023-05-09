@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  metroassignment.api:
+    image: ${DOCKER_REGISTRY-}metroassignmentapi
+    build:
+      context: .
+      dockerfile: METROAssignment.API/Dockerfile
+  sqldb:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+    - SA_PASSWORD=S3cur3P@ssW0rd!
+    - ACCEPT_EULA=Y
+    ports:
+    - "1440:1433"   
