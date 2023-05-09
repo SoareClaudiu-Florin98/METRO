@@ -3,6 +3,7 @@
 ## Run docker compose 
 ### (Make sure you have 1,5 GB available for the Microsoft SQL Server Image)
 
+### If you want to run with IIS, don't forget to replace the connection string 
 
 
 ## Database
